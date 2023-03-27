@@ -1,0 +1,217 @@
+body{
+  background-color: #454444;
+}
+.encabezado {
+  height: 100vh;
+  background-image: url('/imagenes/encabezado1.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-bottom: 10px;
+  border-radius: 25px;
+
+}
+
+.nombre {
+  font-size: 10rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  background-color: rgb(109, 195, 232, 0.6) ;
+ 
+  
+}
+
+.subtitulo {
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  letter-spacing: 1px;
+}
+
+section {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+
+/*CARDS*/
+
+.card {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  border-radius: 25px;
+
+}
+
+.card h3 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;  
+  font-style: italic;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+.card p {
+  font-size: 18px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  ;
+
+}
+
+.casa {
+  background-image: url("/imagenes/hogares.jpg");
+}
+
+.locales {
+  background-image: url("/imagenes/obra2.jpg");
+}
+
+.oficinas {
+  background-image: url("/imagenes/oficina.jpg");
+}
+
+.card:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: -1;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;s
+}
+
+.card .container {
+  z-index: 1;
+  position: relative;
+  padding-bottom: 2rem;
+}
+@media only screen and (min-width: 768px) {
+  section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  .card {
+    width: 30%;
+  }
+}
+
+
+/*QUIENES SOMOS*/
+.presentacion {
+  height:100vh;
+  background-image: url('/imagenes/cristales2.jpg');
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1vh;
+  margin-top: 5vh;
+  border-radius: 25px;
+  
+}
+
+
+@media only screen and (min-width: 768px) {
+  .presentacion {
+    height: 100vh;
+    margin-top: 8vh;
+    flex-direction: row;
+  }
+}
+
+.contenedor {
+  text-align: center;
+  
+  
+}
+
+h3 {
+  font-size: 16vh;
+  text-shadow: 20px 20px 20px white;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+
+}
+
+/*CONTACTOS*/
+
+.contacto {
+  padding: 50px 0;
+}
+
+.contenedor-de-contacto {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contenedor-de-contacto h2 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+.contenedor-de-contacto p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+.redes-sociales {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+/* Estilos para los botones de redes sociales */
+.redes-sociales li {
+  width: 30%;
+  list-style: none;
+}
+
+.redes-sociales li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+/* Estilos para las imágenes de los botones */
+.redes-sociales li a img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+li .whatsapp {
+  background-image: url(/imagenes/whatsapp.png);
+
+}
